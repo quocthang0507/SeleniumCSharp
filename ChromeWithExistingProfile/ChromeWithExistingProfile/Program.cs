@@ -13,7 +13,7 @@ namespace ChromeWithExistingProfile
 		static void Main(string[] args)
 		{
 			ChromeOptions options = new ChromeOptions();
-			options.AddArguments(@"--user-data-dir=C:\Users\quoct\AppData\Local\Google\Chrome\User Data\Default");
+			options.AddArguments(@"user-data-dir=C:\Users\quoct\AppData\Local\Google\Chrome\User Data\");
 			IWebDriver driver = new ChromeDriver(@"D:\OneDrive\Thang\HOCTAP\PUBLIC PROJECTS\SeleniumCSharp", options);
 			driver.Navigate().GoToUrl("https://www.google.com.vn/?gws_rd=ssl");
 			Console.ReadKey();
